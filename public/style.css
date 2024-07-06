@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.brand {
+    padding: 20px;
+    background: #4a90e2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.brand img {
+    height: 60px; /* Increased logo size */
+    width: auto;  /* Maintain aspect ratio */
+     /* Add some space between the logo and text */
+}
+
+.brand h1 {
+  
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.message__area {
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    background: #f9f9f9;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+    border-top: 1px solid #ddd;
+    resize: none;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    max-width: 70%;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.incoming {
+    background: #c7d4fa;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.outgoing {
+    background: #0fa790;
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
